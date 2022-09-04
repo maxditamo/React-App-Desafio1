@@ -1,5 +1,62 @@
+
+
 /* .conteiner {
   border: solid red 4px;
   margin: 20px;
   padding: 20px;
+} */
+
+.divCard {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.cardProduct {
+  margin: 10px;
+}
+.cardTitle {
+  display: flex;
+  justify-content: center
+}
+
+.buttonCarrito {
+  margin-top: 15px;
+  margin-left: 30px;
+
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+}
+.app .count {
+  margin-bottom: 5px;
+  text-align: center;
+  display: flex;
+  margin-left: 5px;
+}
+
+.app .count h1 {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.app .buttons button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  margin: 0 1rem;
+  font-size: 1em;
+  /* box-shadow: 0 4px 32px 0 rgba(10,14,29,.02), 0 8px 64px 0 rgba(10,14,29,.08);
+  cursor: pointer; */
+}
+/* .app .buttons button:hover{
+  font-size: 0em;
+} */
+/* .app .buttons button:focus{
+  outline: 1rem;
 } */
