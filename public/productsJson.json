@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "title": "Banana bar",
+        "price": 150,
+        "img": "./img/bananaBar.jpg",
+        "desc": "Barra de cereales combinada con banana, genjibre y un dulce aroma de castañas de caju."
+    },
+    {
+        "id":2,
+        "title": "Chocolate bar",
+        "price": 120,
+        "img": "./img/chocolateBar.jpg",
+        "desc": "Barra de cereales combinada con banana, genjibre y un dulce aroma de castañas de caju."
+    },
+    {
+        "id":3,
+        "title": "Banana bar",
+        "price": 150,
+        "img": "./img/chocolateBar.jpg",
+        "desc": "Barra de cereales combinada con banana, genjibre y un dulce aroma de castañas de caju."
+    }
+]

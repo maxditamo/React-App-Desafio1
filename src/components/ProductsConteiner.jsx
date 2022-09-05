@@ -1,11 +1,10 @@
 import React from "react";
 import {useState, useEffect} from "react";
-// import productsJson from "../productsJson.json";
-// import ProductsList from "./ProductsList";
+import ProductsList from "./ProductsList";
 
 
 const ProductsConteiner = () => {
-    const [chars, setChars] = useState([]);
+    const [products, setProducts] = useState([]);
 
     // const getProducts = (data, time)=> 
     // new Promise((resolve, reject)=>{
@@ -20,26 +19,26 @@ const ProductsConteiner = () => {
 
         useEffect(() => {
             setTimeout(()=>{
-                getChars()
+                getProducts()
             }, 3000);
             console.log('Mounting...');
         }, [])
 
-    const getChars = () => {
-        const URL = 'https://swapi.dev/api/people/'
+    const getProducts = () => {
+        const URL = './productsJson.json'
         fetch (URL)
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            setChars(data.results)
+            setProducts(data)
         })
     }
 
   return (
     <>
     <div>
-        <div>Star Warrs API</div>
-        { chars.map (char => <li key={char.url}>{char.name}</li> )}
+        <div>APA Bars List</div>
+       <ProductsList products={products}/>
     </div>
     </>
   )

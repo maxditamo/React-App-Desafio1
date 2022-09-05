@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import ItemCount from './ItemCount';
 
 
-function BasicExample() {
+function CardProduct() {
   return (
     <Card className='cardProduct' style={{ width: '15rem' }}>
       <Card.Img variant="top" src="./img/bananaBar.jpg" />
@@ -19,4 +19,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default CardProduct;
