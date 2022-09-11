@@ -6,18 +6,18 @@ export default function ItemCount() {
   const [count, setCount] = useState(1);
 
   let incrementCount = () => {
-    setCount(count + 1);
+    setCount(prev => prev + 1);
   };
 
   let decrementCount = () => {
-    setCount(count - 1);
+    setCount(prev => prev  - 1);
   };
 
   return (
     <div className="app">
       <div>
         <div className="count">
-          <h3>Counter:</h3>
+          <h3>cantidad:</h3>
           <h1>{count}</h1>
         </div>
         <div className="buttons">
@@ -27,4 +27,6 @@ export default function ItemCount() {
       </div>
     </div>
   );
-}
+};
+
+

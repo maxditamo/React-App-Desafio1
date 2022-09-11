@@ -1,6 +1,3 @@
-
-// import NavbarToggle from 'react-bootstrap/esm/NavbarToggle'
-// import CartWidget from './CartWidget'
 import React from 'react';
 import logoApaBars from '../img/logoApaBars.jpg'
 import Container from 'react-bootstrap/Container';
@@ -15,7 +12,7 @@ function NavScrollExample() {
     <>
     <Navbar bg="light" expand="lg">
       <Container fluid>
-          <Navbar.Brand href="index.html">
+          <Navbar.Brand href="/">
             <img
               src={logoApaBars}
               width="40"
@@ -24,7 +21,7 @@ function NavScrollExample() {
               alt="Apa Bars logo"
             />
           </Navbar.Brand>
-        <Navbar.Brand href="index.html">APA Bars</Navbar.Brand>
+        <Navbar.Brand href="/">APA Bars</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -32,25 +29,38 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="index.html">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="All Bars" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action1">Almond</NavDropdown.Item>
-              <NavDropdown.Item href="#action2">
-                Nuts
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action3">
+              <NavDropdown.Item href="/shop/item/banana">
+                Banana</NavDropdown.Item>
+              <NavDropdown.Item href="/shop/item/chocolate">
                 Chocolate
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/shop/item/tamarindo">
+                Tamarindo
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/shop/item/higos">
+                Higos
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="All Oatmeal" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action4">Almond</NavDropdown.Item>
-              <NavDropdown.Item href="#action5">
-                Nuts
+            <NavDropdown.Item href="/shop/item/cafe">
+                Cafe
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action6">
-                Chocolate
+              <NavDropdown.Item href="/shop/item/almond">
+                Almond</NavDropdown.Item>
+              <NavDropdown.Item href="/shop/item/mani">
+                Mani
               </NavDropdown.Item>
+              <NavDropdown.Item href="/shop/item/pistacho">
+                Pistacho
+              </NavDropdown.Item>
+              
             </NavDropdown>
+            <NavDropdown title="Category" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="/shop/category/fruits">Fruits</NavDropdown.Item>
+              <NavDropdown.Item href="/shop/category/withoutfruits">Without Fruits</NavDropdown.Item>
+              </NavDropdown>
             <NavDropdown title="About Us" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action7">Our story</NavDropdown.Item>
               <NavDropdown.Item href="#action8">
@@ -84,4 +94,3 @@ function NavScrollExample() {
 
 
 export default NavScrollExample;
-// export default Navbar;

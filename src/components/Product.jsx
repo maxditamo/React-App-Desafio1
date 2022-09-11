@@ -5,6 +5,7 @@ import ItemCount from "./ItemCount";
 
 
 
+
 const Product = ({ title, img, price, desc}) => {
   return (
 
@@ -12,8 +13,7 @@ const Product = ({ title, img, price, desc}) => {
       <Card.Img variant="top" src={img} />
       <Card.Body>
         <Card.Title className='cardTitle'>{title}</Card.Title>
-        <Card.Text className='cardText'>{desc} ${price}
-        </Card.Text>
+        <Card.Text className='cardText'>{desc} ${price}</Card.Text>
         <ItemCount/>
         <Button variant="primary" className='buttonCarrito' >Agregar al carrito</Button>
       </Card.Body>

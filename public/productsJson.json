@@ -1,23 +1,76 @@
 [
     {
-        "id":1,
+        "id": 1,
         "title": "Banana bar",
-        "price": 150,
+        "slug": "banana",
+        "category": "fruits",
+        "price": 160,
         "img": "./img/bananaBar.jpg",
-        "desc": "Barra de cereales combinada con banana, genjibre y un dulce aroma de castañas de caju."
+        "desc": "Barra de cereales combinada con banana y un dulce aroma de castañas."
     },
     {
-        "id":2,
+        "id": 2,
         "title": "Chocolate bar",
+        "slug": "chocolate",
+        "category": "fruits",
         "price": 120,
         "img": "./img/chocolateBar.jpg",
-        "desc": "Barra de cereales combinada con banana, genjibre y un dulce aroma de castañas de caju."
+        "desc": "Barra de cereales con un mix de los mejores chocolates internacionales."
     },
     {
-        "id":3,
-        "title": "Banana bar",
+        "id": 3,
+        "title": "Tamarindo bar",
+        "slug": "tamarindo",
+        "category": "fruits",
         "price": 150,
-        "img": "./img/chocolateBar.jpg",
-        "desc": "Barra de cereales combinada con banana, genjibre y un dulce aroma de castañas de caju."
+        "img": "./img/tamarindoBar.jpeg",
+        "desc": "Barra de cereales con un exquisito mix de tamarindo y el mas fino café ."
+    },
+    {
+        "id": 4,
+        "title": "Higos bar",
+        "slug": "higos",
+        "category": "fruits",
+        "price": 170,
+        "img": "./img/higosBar.jpeg",
+        "desc": "Barra de cereales combinada con banana e higos, creada por atletas para atletas."
+    },
+    {
+        "id": 5,
+        "title": "Cafe bar",
+        "slug": "cafe",
+        "category": "withoutfruits",
+        "price": 160,
+        "img": "./img/cafeBar.jpeg",
+        "desc": "Barra de cereales combinada con cafe y pequeños trozos de mani."
+    },
+    {
+        "id": 6,
+        "title": "Almond bar",
+        "slug": "almond",
+        "category": "withoutfruits",
+        "price": 120,
+        "img": "./img/almondBar.jpeg",
+        "desc": "Barra de cereales con un mix de los mejores cereales nacionales."
+    },
+    {
+        "id": 7,
+        "title": "Mani bar",
+        "slug": "mani",
+        "category": "withoutfruits",
+        "price": 150,
+        "img": "./img/maniBar.jpeg",
+        "desc": "Barra de cereales con un exquisito mix de mani y frutas secas locales ."
+    },
+    {
+        "id": 8,
+        "title": "Pistacho bar",
+        "slug": "pistacho",
+        "category": "withoutfruits",
+        "price": 170,
+        "img": "./img/pistachoBar.jpeg",
+        "desc": "Barra de cereales combinada con pistacho, creada por atletas para atletas."
     }
+
+
 ]

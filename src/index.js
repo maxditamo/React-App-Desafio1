@@ -5,8 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ItemListContainer from './components/ItemListContainer';
-import { Navbar } from 'react-bootstrap';
+import ItemDetailContainer from './components/shop/ItemDetailContainer';
+import ProductsContainer from './components/ProductsContainer';
+import Navbar from './components/Navbar';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +18,9 @@ root.render(
   <Navbar/>
     <Routes>
       <Route path='/' element={<App />} />
-      <Route path='/itlico' element={<ItemListContainer/>}/>
+      <Route path='/shop' element={<ProductsContainer/>}/>
+      <Route path='/shop/item/:slug' element={<ItemDetailContainer />} />
+      <Route path='/shop/category/:category' element={<ItemDetailContainer/>}/>
     </Routes>
   </BrowserRouter>
   // </React.StrictMode>

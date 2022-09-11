@@ -7,16 +7,19 @@
 } */
 
 .divCard {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   
 }
 .conteinerCard {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  
+  justify-content: space-around;
+  align-items: center;
 }
 
 .cardProduct {
